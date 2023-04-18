@@ -1,0 +1,65 @@
+BODY{
+    text-align: center;
+    background-color: blueviolet;
+}
+table.tr,th,td{
+    width: 10em;
+}
+table{
+    border-collapse: collapse;
+}
+th[colspan]{
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;
+}
+tr:nth-of-type(1) > th {
+    background-color: deeppink;
+}
+.INGLES{
+    background-color: aquamarine;
+}
+.ESPAÑOL{
+    background-color: yellow;
+}
+.INFO{
+    background-color: dodgerblue;
+}
+.FISICA{
+    background-color: chartreuse;
+}
+.QUIMICA{
+    background-color: darkolivegreen;
+}
+.SOCI{
+    background-color: rgb(59, 126, 202);
+}
+.HH{
+    background-color: darkcyan;
+}
+.EFD{
+    background-color: darkkhaki;
+}
+.FP{
+    background-color: goldenrod;
+}
+.MATE{
+    background-color: rgb(215, 40, 40);
+}
+.BIO{
+    background-color: lightblue;
+}
+.VACIO{
+    background-color: white;
+}
+tr:nth-of-type(2) > th,
+tr:nth-of-type(3) > th,
+tr:nth-of-type(4) > th,
+tr:nth-of-type(5) > th,
+tr:nth-of-type(6) > th,
+tr:nth-of-type(7) > th,
+tr:nth-of-type(8) > th,
+tr:nth-of-type(9) > th,
+tr:nth-of-type(10) > th{
+    background-color: aqua;
+}

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+	}
+	body{
+        background-color:rgb(153, 0, 255);
+        background-attachment: fixed;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: contain;
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+       
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgb(60, 4, 112);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 300px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor:default;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color:white;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+    }
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+        color:rgb(0, 238, 255)
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+		min-height: 100vh;
+		gap: 30px;
+	}
+	.container-menu{
+		background-image: url("images/ILACE.jpg");
+        background-color: #9a05f1;
+		position: absolute;
+		width: 100%;
+		height: 130vh;
+		top:0;left:0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+		margin: 0%;
+    }
+	
+
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 200%;
+		max-width: 350px;
+		background: #1c1c1c;
+		height: 130vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 10px solid transparent;
+		transition: all 500ms ease;
+	}
+	.cont-menu nav ul ul{
+		height: 0px;
+		width: 0px;
+		overflow: hidden;
+	}
+	.cont-menu nav ul li:hover ul{
+		background-color: #1c1c1c;
+		margin: 10px;
+		height:auto;
+		width: auto;
+		position: static;
+		transition: all 500ms ease;
+		transform: translate(100%);
+	}
+
+	.cont-menu nav ul ul li{
+		counter-increment:none;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background:#9a05f1;
+        color:rgb(0, 238, 255)
+	}
+
+
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+	/*Comienzo de slider*/
+	.carousel{
+		width: 35%;
+		height: 40%;
+		position:relative;
+		top: 50%;
+		left: 33%;
+	}
+	.carousel__contenedor{
+		position: relative;
+	}
+	.carousel__anterior,
+	.carousel__siguiente{
+		position:absolute;
+		display: block;
+		width: 30px;
+		height: 30px;
+		border: none;
+		top: calc(50% - 35px);
+		cursor: pointer;
+		line-height: 40px;
+		text-align: center;
+		background: none;
+		color: #fff;
+		opacity: 20%;
+
+	}
+	.carousel__anterior:hover,
+	.carousel__siguiente:hover{
+		opacity: 100%;
+		color:rgb(0, 238, 255)
+
+	}
+	.carousel__anterior{
+		left: -30px;
+	}
+	.carousel__siguiente{
+		right: -30px;
+	}
+	.carousel__lista{
+		overflow: hidden;
+	}
+	.carousel__elementos{
+		width: 100%;
+		height: 100%;
+		transition: 0.5s;
+		object-fit: cover;
+
+	}
+	.carousel__elementos:hover{
+		transform: scale(1.2);
+	}
+
+	/*FIN DE SLIDER*/
+
+	/*Ilace*/
+	.ilace_cont{
+		width: 100%;
+		min-height: 100hv;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.ilace_ani{
+		font-size: 5rem;
+		text-align: center;
+		margin-top: 10%;
+		font-family:'Poppins',sans-serif;
+		color: transparent;
+		-webkit-text-stroke: 2px aqua;
+		background-image:linear-gradient(to left,
+		aqua,rgba(0, 255, 255, .5),black, rgb(35,31,31)
+		);
+		text-shadow:0 0 10px rgba(0, 255, 255, .5),
+		0 0 20px rgba(0, 255, 255, .5),
+		0 0 40px rgba(0, 255, 255, .5),
+		0 0 80px rgba(0, 255, 255, .5),
+		0 0 160px rgba(0, 255, 255, .5),
+		0 0 320px rgba(0, 255, 255, .5);
+		background-size: 200%;
+		-webkit-background-clip: text;
+		animation: move 10s linear infinite ;
+	}
+	@keyframes move{
+		100%{
+			background: 2000px 0;
+		}
+	}
+	/*fin de ilace*/
+

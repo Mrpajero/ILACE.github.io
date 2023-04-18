@@ -1,0 +1,46 @@
+body{
+    background-color: blueviolet;
+}
+table.tr,th,td{
+    width: 10em;
+}
+table{
+    border-collapse: collapse;
+}
+tr:nth-of-type(1) > th{
+background-color: rgb(255, 118, 196);
+}
+td[colspan]{
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;
+}
+.progra{
+    background-color: rgb(255, 0, 0);
+}
+.lab{
+    background-color: rgb(238, 255, 0);
+}
+.man{
+    background-color: rgb(0, 30, 255);
+}
+.redes{
+    background-color: rgb(7, 255, 23);
+}
+.web{
+    background-color: rgb(255, 145, 0);
+}
+.vacio{
+    background-color: whitesmoke;
+}
+tr:nth-of-type(2) > th,
+tr:nth-of-type(3) > th,
+tr:nth-of-type(4) > th,
+tr:nth-of-type(5) > th,
+tr:nth-of-type(6) > th,
+tr:nth-of-type(7) > th,
+tr:nth-of-type(8) > th,
+tr:nth-of-type(9) > th,
+tr:nth-of-type(10) > th{
+background-color: aqua;
+}

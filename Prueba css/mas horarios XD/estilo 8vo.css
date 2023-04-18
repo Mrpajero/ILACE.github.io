@@ -1,0 +1,58 @@
+body{
+    background-color: blueviolet;
+}
+table.tr,th,td{
+    width: 10em;
+}
+table{
+    border-collapse: collapse;
+}
+tr:nth-of-type(1) > th{
+background-color: rgb(255, 118, 196);
+}
+td[colspan]{
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;
+}
+.mate{
+    background-color: red;
+}
+.tecno{
+    background-color: rgb(77, 128, 237);
+}
+.Español{
+    background-color: yellow;
+}
+.arte{
+    background-color: rgb(255, 0, 200);
+}
+.CN{
+    background-color: rgb(61, 255, 61);
+}
+.ES{
+    background-color: blue;
+}
+.EF{
+    background-color: rgb(225, 0, 255);
+}
+.ingles{
+    background-color: aquamarine;
+}
+.EC{
+    background-color: rgb(255, 117, 5);
+}
+.vacio{
+    background-color: whitesmoke;
+}
+tr:nth-of-type(2) > th,
+tr:nth-of-type(3) > th,
+tr:nth-of-type(4) > th,
+tr:nth-of-type(5) > th,
+tr:nth-of-type(6) > th,
+tr:nth-of-type(7) > th,
+tr:nth-of-type(8) > th,
+tr:nth-of-type(9) > th,
+tr:nth-of-type(10) > th{
+background-color: aqua;
+}

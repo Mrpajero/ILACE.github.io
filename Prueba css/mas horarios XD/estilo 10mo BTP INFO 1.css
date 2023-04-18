@@ -1,0 +1,29 @@
+BODY{
+    text-align: center;
+    background-color: blueviolet;
+}
+table.tr,th,td{
+    width: 10em;
+}
+table{
+    border-collapse: collapse;
+}
+th[colspan]{
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;
+}
+tr:nth-of-type(1) > th {
+    background-color: deeppink;
+} 
+tr:nth-of-type(2) > th,
+tr:nth-of-type(3) > th,
+tr:nth-of-type(4) > th,
+tr:nth-of-type(5) > th,
+tr:nth-of-type(6) > th,
+tr:nth-of-type(7) > th,
+tr:nth-of-type(8) > th,
+tr:nth-of-type(9) > th,
+tr:nth-of-type(10) > th{
+    background-color: aqua;
+}

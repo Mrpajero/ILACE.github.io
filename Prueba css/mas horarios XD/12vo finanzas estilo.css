@@ -1,0 +1,49 @@
+body{
+    background-color: blueviolet;
+}
+table.tr,th,td{
+    width: 10em;
+}
+table{
+    border-collapse: collapse;
+}
+tr:nth-of-type(1) > th{
+background-color: rgb(255, 118, 196);
+}
+td[colspan]{
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;
+}
+.IC{
+    background-color: rgb(13, 0, 255);
+}
+.LM{
+    background-color: rgb(67, 219, 176);
+}
+.economia{
+    background-color: rgb(255, 28, 28);
+}
+.AF{
+    background-color: rgb(238, 255, 0);
+}
+.OT{
+    background-color: rgb(243, 115, 2);
+}
+.CB{
+    background-color: rgb(255, 81, 157);
+}
+.vacio{
+    background-color: white;
+}
+tr:nth-of-type(2) > th,
+tr:nth-of-type(3) > th,
+tr:nth-of-type(4) > th,
+tr:nth-of-type(5) > th,
+tr:nth-of-type(6) > th,
+tr:nth-of-type(7) > th,
+tr:nth-of-type(8) > th,
+tr:nth-of-type(9) > th,
+tr:nth-of-type(10) > th{
+background-color: aqua;
+}
